@@ -23,7 +23,7 @@ interface ReposType {
 
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
-
+  console.log(repositories.map((repository)=>console.log(repository.homepage)))
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch(
@@ -83,7 +83,7 @@ export const Project = (): JSX.Element => {
               {repository.homepage && (
                 <ProjectLink
                   target="_blank"
-                  href={`https://${repository.homepage}`}
+                  href={`${repository.homepage}`}
                 >
                   <FaShare /> See demo
                 </ProjectLink>
