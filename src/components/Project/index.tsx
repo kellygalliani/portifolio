@@ -11,21 +11,33 @@ import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
 import { userData } from "@/utils/userData";
+import { projecsData } from "@/utils/projectsData";
 
-interface ReposType {
+/* interface ReposType {
   id: number;
   name: string;
   language: string;
   description: string;
   html_url: string;
   homepage: string;
-}
+} */
+
+type Project = {
+  id: number;
+  name: string;
+  description: string;
+  img: string;
+  homepage: string;
+  documentation: string;
+  html_url: string;
+  language: string[];
+};
 
 export const Project = (): JSX.Element => {
-  const [repositories, setRepositories] = useState<ReposType[]>([]);
-  console.log(repositories.map((repository)=>console.log(repository.homepage)))
+  const [repositories, setRepositories] = useState<Project[]>([]);
+  
   useEffect(() => {
-    const fetchData = async () => {
+    /* const fetchData = async () => {
       const data = await fetch(
         `https://api.github.com/users/${userData.githubUser}/repos?sort=created&direction=desc`
       );
@@ -36,8 +48,9 @@ export const Project = (): JSX.Element => {
 
       return json;
     };
+    fetchData(); */
 
-    fetchData();
+    setRepositories([...projecsData].reverse())
   }, []);
 
   return (
@@ -58,12 +71,14 @@ export const Project = (): JSX.Element => {
               <Text type="body2" color="grey2">
                 Primary Language:
               </Text>
-              {repository.language ? (
-                <ProjectStackTech>
-                  <Text color="grey2" type="body2">
-                    {repository.language}
-                  </Text>
-                </ProjectStackTech>
+              {repository.language && repository.language.length > 0 ? (
+                repository.language.map((language) => (
+                  <ProjectStackTech key={language}>
+                    <Text color="grey2" type="body2">
+                      {language}
+                    </Text>
+                  </ProjectStackTech>
+                ))
               ) : (
                 <ProjectStackTech>
                   <Text color="grey2" type="body2">

@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <GlobalStyle>
       <NavBar />
-      <Home />
+        <Home />
       <Footer />
     </GlobalStyle>
   </React.StrictMode>
