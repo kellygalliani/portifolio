@@ -1,4 +1,5 @@
 import { createTheme, globalCss, styled } from "@stitches/react";
+import { useLanguage } from "../providers/languageContext";
 import { ReactNode } from "react";
 
 interface GlobalStyleProps {
@@ -81,10 +82,11 @@ export const globalStyles = globalCss({
 });
 
 export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
+  const { language } = useLanguage();
 
   const theme = createTheme({
     colors: {
-      brand1: "#f8b200",
+      brand1: language ? "#f8b200" : "#f8007c",
       brand2: "#311E75",
 
       grey0: "#0A0A0B",

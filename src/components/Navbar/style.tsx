@@ -53,3 +53,9 @@ export const NavbarMobileArea = styled("div", {
   display: "flex",
   justifyContent: "space-between",
 });
+
+export const Language = styled("div", {
+  display: "flex",
+  justifyContent: "center",
+  color: "white",
+});

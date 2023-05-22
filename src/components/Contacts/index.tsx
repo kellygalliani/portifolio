@@ -15,6 +15,7 @@ import {
 import { FaWhatsapp, FaEnvelopeOpen, FaLinkedin } from "react-icons/fa";
 import { useRef } from "react";
 import { userData } from "@/utils/userData";
+import { useLanguage } from "../../providers/languageContext";
 
 export const Contacts = () => {
   const ref = useRef(null);
@@ -22,6 +23,7 @@ export const Contacts = () => {
   const linkedInUrl = `https://www.linkedin.com/in/${userData.linkedinUser}`;
 
   const { scrollYProgress } = useViewportScroll();
+  const { language } = useLanguage();
   const scale = useTransform(scrollYProgress, [0, 1], [0.1, 0.9]);
 
   return (
@@ -31,11 +33,12 @@ export const Contacts = () => {
           <motion.div style={{ scale }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Let's talk and{" "}
+                {language ? "Vamos conversar e " : "Let's talk and "}
                 <Text as="span" type="heading2" color="brand1">
-                  develop solutions for your company
+                  {language
+                    ? "desenvolver soluções para sua empresa!"
+                    : "develop solutions for your company!"}
                 </Text>
-                , together!
               </Text>
             </ContactSectionText>
           </motion.div>
@@ -46,20 +49,27 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My Whatsapp
+                  {language ? "Meu Whatsapp" : "My Whatsapp"}
                 </Text>
                 <Text color="grey2" type="body2">
-                  I'm available for a voice chat, let's about creativity
-                  together?
+                  {language
+                    ? "Estou disponível para uma chamada de voz, vamos conversar sobre criatividade juntos?"
+                    : "I'm available for a voice chat, let's talk about creativity together?"}
                 </Text>
                 <Text
                   as="a"
                   color="grey2"
                   type="body2"
                   target="_blank"
-                  href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
+                  href={`https://api.whatsapp.com/send?phone=+55+${
+                    userData.whatsappNumber
+                  }&text=${
+                    language
+                      ? "Olá, venho por meio do seu portfólio na internet, gostaria de conhecer melhor seus serviços"
+                      : "Hello, I come through your portfolio on the internet, I would like to know more about your services"
+                  }`}
                 >
-                  Talk Now
+                  {language ? "Falar agora" : "Talk Now"}
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -70,10 +80,12 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My email
+                  {language ? "Meu email" : "My email"}
                 </Text>
                 <Text color="grey2" type="body2">
-                  Send me an email reporting feedbacks, suggestions and ideas
+                  {language
+                    ? "Me mande um email com feedbacks, sugestões e ideias"
+                    : "Send me an email reporting feedbacks, suggestions and ideas"}
                 </Text>
 
                 <Text
@@ -83,10 +95,10 @@ export const Contacts = () => {
                   target="_blank"
                   href={`mailto=${userData.emailUser}`}
                   onClick={() =>
-                    (window.location.href = "mailto:nekelpatrick.com")
+                    (window.location.href = `mailto:${userData.emailUser}`)
                   }
                 >
-                  Send me an email
+                  {language ? "Enviar um email" : "Send me an email"}
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -96,11 +108,12 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My LinkedIn
+                  {language ? "Meu LinkedIn" : "My LinkedIn"}
                 </Text>
                 <Text color="grey2" type="body2">
-                  We can create more constant interactions as well as a sharing
-                  network
+                  {language
+                    ? "Fique de olho nas atualizações de projetos meus através dessa rede de Network"
+                    : "We can create more constant interactions as well as a sharing network."}
                 </Text>
                 <Text
                   as="a"
@@ -109,7 +122,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={linkedInUrl}
                 >
-                  Go to LinkedIn now
+                  {language ? "Ir para o LinkedIn agora" : "Go to LinkedIn now"}
                 </Text>
               </ContactCardContent>
             </ContactCard>
