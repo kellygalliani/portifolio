@@ -9,7 +9,7 @@ import {
 
 import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
-import { FaGithub, FaShare } from "react-icons/fa";
+import { FaGithub, FaShare, FaLeanpub } from "react-icons/fa";
 import { userData } from "@/utils/userData";
 import { projecsData } from "@/utils/projectsData";
 
@@ -35,7 +35,7 @@ type Project = {
 
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<Project[]>([]);
-  
+
   useEffect(() => {
     /* const fetchData = async () => {
       const data = await fetch(
@@ -50,7 +50,7 @@ export const Project = (): JSX.Element => {
     };
     fetchData(); */
 
-    setRepositories([...projecsData].reverse())
+    setRepositories([...projecsData].reverse());
   }, []);
 
   return (
@@ -96,11 +96,16 @@ export const Project = (): JSX.Element => {
                 <FaGithub /> Github Code
               </ProjectLink>
               {repository.homepage && (
+                <ProjectLink target="_blank" href={`${repository.homepage}`}>
+                  <FaShare /> See demo
+                </ProjectLink>
+              )}
+              {repository.documentation && (
                 <ProjectLink
                   target="_blank"
-                  href={`${repository.homepage}`}
+                  href={`${repository.documentation}`}
                 >
-                  <FaShare /> See demo
+                  <FaLeanpub /> Documentation
                 </ProjectLink>
               )}
             </ProjectLinks>
