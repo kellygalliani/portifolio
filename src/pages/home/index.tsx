@@ -56,35 +56,33 @@ export const Home = (): JSX.Element => {
             <Text as="h1" type="heading1" color="grey5">
               {language ? (
                 <>
-                  Minha paixão é usar a{" "}
+                  Minha paixão é usar o{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    tecnologia
+                    código
                   </Text>{" "}
                   para criar{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    produtos
+                    soluções simples
                   </Text>{" "}
-                  e{" "}
+                  para{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    experiências
-                  </Text>{" "}
-                  incríveis
+                    problemas complexos
+                  </Text>
                 </>
               ) : (
                 <>
                   My passion is using{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    technology
+                    coding
                   </Text>{" "}
                   to create{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    products
+                    simple solutions
                   </Text>{" "}
-                  and{" "}
+                  to{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    experiences
-                  </Text>{" "}
-                  that are amazing
+                    complex problems
+                  </Text>
                 </>
               )}
             </Text>

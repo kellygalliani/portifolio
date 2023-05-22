@@ -10,6 +10,22 @@ export const ProjectStack = styled(Flex, {
   },
 });
 
+export const ProjectImage = styled("div", {
+  borderRadius: "18px",
+  maxHeight: "250px",
+  width: "100%",
+  overflow: "hidden",
+  padding: "0",
+  borderTop: "2px solid $brand1",
+  borderRight: "3px solid $brand1",
+
+  "& > img": {
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+  },
+});
+
 export const ProjectStackTech = styled("span", {
   backgroundColor: "$grey1",
   color: "$grey2",
@@ -53,7 +69,7 @@ export const Project = styled("article", {
       },
 
       "&::before": {
-        content: 'New',
+        content: "New",
         position: "absolute",
         top: "5px",
         right: "-4rem",

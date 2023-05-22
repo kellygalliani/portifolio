@@ -5,6 +5,7 @@ import {
   ProjectStackTech,
   ProjectLink,
   ProjectLinks,
+  ProjectImage,
 } from "./style";
 
 import { Text } from "@/styles/Text";
@@ -58,6 +59,9 @@ export const Project = (): JSX.Element => {
       {repositories &&
         repositories?.map?.((repository) => (
           <ProjectWrapper key={repository.id}>
+            <ProjectImage>
+              <img src={repository.img} alt={repository.name} />
+            </ProjectImage>
             <ProjectTitle
               as="h2"
               type="heading3"
