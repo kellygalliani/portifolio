@@ -14,19 +14,23 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
+import { useLanguage } from "../../providers/languageContext";
 
 export interface MenuButtonOpen {
   open: Boolean;
   setOpen: (value: Boolean) => void;
 }
+interface NavLinksProps {
+  language: boolean;
+}
 
 export const NavBar = (): JSX.Element => {
-
   const isWide = useMedia({ maxWidth: "991px" });
 
   document.title = userData.nameUser;
 
   const [open, setOpen] = useState(false);
+  const { language } = useLanguage();
 
   const OpenMenu = () => {
     setOpen(!open);
@@ -50,27 +54,31 @@ export const NavBar = (): JSX.Element => {
           )}
         </NavbarMobileArea>
         <Flex>
-          {isWide ? open && <NavLinks /> : <NavLinks />}
+          {isWide ? (
+            open && <NavLinks language={language} />
+          ) : (
+            <NavLinks language={language} />
+          )}
         </Flex>
       </Container>
     </NavbarWrapper>
   );
 };
 
-export const NavLinks = (): JSX.Element => {
+export const NavLinks = ({ language }: NavLinksProps): JSX.Element => {
   return (
     <NavbarLinks>
       <Button type="btLink" as="a" color="grey4" href={`#home`}>
-        Home
+        {language ? "Início" : "Home"}
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#projects`}>
-        Projects
+        {language ? "Projetos" : "Projects"}
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#contact`}>
-        Contact
+        {language ? "Contato" : "Contact"}
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#social-media`}>
-        Social Media
+        {language ? "Mídia Social" : "Social Media"}
       </Button>
     </NavbarLinks>
   );

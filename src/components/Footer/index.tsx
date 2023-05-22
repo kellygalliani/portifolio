@@ -5,9 +5,12 @@ import { UserImage } from "@/pages/home/style";
 import { userData } from "@/utils/userData";
 import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { Button } from "@/styles/Buttons";
+import { useLanguage } from "../../providers/languageContext";
 // import { HandEffect } from "../HandEffect";
 
 export const Footer = (): JSX.Element => {
+  const { language } = useLanguage();
+
   return (
     <FooterWrapper id="social-media">
       <Container>
@@ -21,10 +24,12 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you! {/* <HandEffect /> */}
+              {language ? "Obrigado!" : "Thank you!"} {/* <HandEffect /> */}
             </Text>
             <Text type="body1" color="grey2">
-              Follow me on my social networks and let's talk
+              {language
+                ? "Siga-me nas minhas redes sociais e vamos conversar"
+                : "Follow me on my social networks and let's talk"}
             </Text>
           </Box>
         </Flex>

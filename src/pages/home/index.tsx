@@ -28,13 +28,12 @@ import {
 } from "./style";
 import { useLanguage } from "../../providers/languageContext";
 
-
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
   const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
-  
+
   const { language } = useLanguage();
-  
+
   return (
     <main id="home">
       <Header>
@@ -48,7 +47,8 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">{language
+              <Text color="grey4">
+                {language
                   ? `Olá, meu nome é ${userData.nameUser}`
                   : `Hello, my name is ${userData.nameUser}`}
               </Text>
@@ -56,40 +56,53 @@ export const Home = (): JSX.Element => {
             <Text as="h1" type="heading1" color="grey5">
               {language ? (
                 <>
-                  Eu{" "}
+                  Minha paixão é usar a{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    amo
+                    tecnologia
                   </Text>{" "}
-                  criar e{" "}
+                  para criar{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    desenvolver
+                    produtos
                   </Text>{" "}
-                  projetos
+                  e{" "}
+                  <Text as="span" type="heading1" color="brand1">
+                    experiências
+                  </Text>{" "}
+                  incríveis
                 </>
               ) : (
                 <>
-                  I{" "}
+                  My passion is using{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    love
+                    technology
                   </Text>{" "}
-                  creating and{" "}
+                  to create{" "}
                   <Text as="span" type="heading1" color="brand1">
-                    developing
+                    products
                   </Text>{" "}
-                  projects
+                  and{" "}
+                  <Text as="span" type="heading1" color="brand1">
+                    experiences
+                  </Text>{" "}
+                  that are amazing
                 </>
               )}
             </Text>
+
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              {language
+                ? "Descubra aqui neste ambiente, criado especialmente para você, todos os meus projetos e tecnologias"
+                : "Discover here in this environment, created especially for you, all my projects and technologies"}
             </Text>
+
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                {language ? "Ver Projetos" : "See Projects"}
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                {language
+                  ? "Ver o código do portifólio"
+                  : "See my portfolio source code"}
               </Button>
               <Button
                 color="grey5"
@@ -115,13 +128,12 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                {language ? "Meus Projetos" : "My projects"}
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
-                <Text as="span" color="brand5">
-                  side projects
-                </Text>
+                {language
+                  ? "Fique à vontade para explorar"
+                  : "Feel free to explore"}
               </Text>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
