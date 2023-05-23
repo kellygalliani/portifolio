@@ -81,7 +81,7 @@ export const projecsData = [
     name: "API - Filmay - Banco de Filmes  ",
     description:
       "Um gerenciador de filme no estilo do aplicativo Filmow - É possível cadastrar, visualizar os filmes, atualizar informações do filme e deletar",
-    img: "https://i.ibb.co/pwqnbV8/6.png",
+    img: "https://i.ibb.co/kBCjCzt/10.png",
     homepage: "",
     documentation: "",
     html_url: "https://github.com/kellygalliani/movies-typeorm",
@@ -89,20 +89,22 @@ export const projecsData = [
   },
   {
     id: 9,
-    name: "API - KImóveis",
+    name: "API - Nostra Imóveis",
     description: "Api para gerenciamento completo de uma imobiliária",
-    img: "https://i.ibb.co/pwqnbV8/6.png",
+    img: "https://i.ibb.co/LPZFN9N/9.png",
     homepage: "",
     documentation: "",
     html_url: "https://github.com/kellygalliani/m4-t14-kimoveis-kelly",
     language: ["Node.js", "Express", "Typescript", "TypeORM"],
   },
+  {
+    id: 10,
+    name: "API - KGP Commerce",
+    description: "Api completa para gerenciamento de um e-commerce",
+    img: "https://i.ibb.co/8zHRNxN/8.png",
+    homepage: "",
+    documentation: "https://ecommerce-g35.onrender.com/api/docs/swagger/",
+    html_url: "https://github.com/kellygalliani/ecommerce-api_python",
+    language: ["Python", "Django"],
+  },
 ];
-
-/* <img src="https://i.ibb.co/yPxJX3d/1.png" alt="1" border="0">
-<img src="https://i.ibb.co/FXGTW4k/2.png" alt="2" border="0">
-<img src="https://i.ibb.co/sjfDtnT/3.png" alt="3" border="0">
-<img src="https://i.ibb.co/dmCS5rw/4.png" alt="4" border="0">
-<img src="https://i.ibb.co/8DPFHFj/5.png" alt="5" border="0">
-<img src="https://i.ibb.co/pwqnbV8/6.png" alt="6" border="0">
-<img src="https://i.ibb.co/YXV0HpZ/7.png" alt="7" border="0"> */

@@ -89,8 +89,8 @@ export const Home = (): JSX.Element => {
 
             <Text type="body1" color="grey2">
               {language
-                ? "Descubra aqui neste ambiente, criado especialmente para você, todos os meus projetos e tecnologias"
-                : "Discover here in this environment, created especially for you, all my projects and technologies"}
+                ? "Descubra aqui neste ambiente, criado especialmente para você, alguns dos meus projetos e tecnologias"
+                : "Discover here in this environment, created especially for you, some of my projects and technologies"}
             </Text>
 
             <HeaderButtonsArea>
