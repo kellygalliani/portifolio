@@ -107,4 +107,14 @@ export const projecsData = [
     html_url: "https://github.com/kellygalliani/ecommerce-api_python",
     language: ["Python", "Django"],
   },
+  {
+    id: 11,
+    name: "Creative - Plataforma de Educação",
+    description: "Plataforma de Educação Digital - Com Lousa Digital",
+    img: "https://ibb.co/qDsGWx5",
+    homepage: "https://creative-educ-angular.vercel.app/",
+    documentation: "",
+    html_url: "https://github.com/kellygalliani/creative_educ-angular",
+    language: ["Angular", "CSS"],
+  },
 ];
