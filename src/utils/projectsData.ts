@@ -111,7 +111,7 @@ export const projecsData = [
     id: 11,
     name: "Creative - Plataforma de Educação",
     description: "Plataforma de Educação Digital - Com Lousa Digital",
-    img: "https://ibb.co/qDsGWx5",
+    img: "https://i.ibb.co/0nMNFQt/Creative-Educa-o.png",
     homepage: "https://creative-educ-angular.vercel.app/",
     documentation: "",
     html_url: "https://github.com/kellygalliani/creative_educ-angular",
