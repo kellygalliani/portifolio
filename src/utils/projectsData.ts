@@ -121,7 +121,7 @@ export const projecsData = [
     id: 12,
     name: "FreshCodes - Site Institucional",
     description:
-      "Criação de +8 páginas para site institucional, com modais, lógica de contagem regressiva em javascript, observer e tudo construído usando o Tailwind",
+      "Criação de +8 páginas para site institucional, com modais, lógica de contagem regressiva em javascript, observer e tudo em Tailwind",
     img: "https://i.ibb.co/yB3xy4D/Fresh-Codes.png",
     homepage: "https://freshcodes.com.br/",
     documentation: "",
@@ -132,7 +132,7 @@ export const projecsData = [
     id: 13,
     name: "SG Global Group - Site Institucional",
     description:
-      "Criação da página principal do site, usando javascript vanilla, css, bootstrap conforme preferência do cliente. Ainda, foram criadas funções em PHP para busca em banco de dados, observer para ações específicas em dobras do site e animações em css (carrosel infinito de imagens)",
+      "Funções em PHP para busca em banco de dados, observer para ações específicas em dobras do site e animações em css (carrosel infinito de imagens)",
     img: "https://i.ibb.co/sF34wkT/sg.png",
     homepage: "https://sgglobal.group/",
     documentation: "",
