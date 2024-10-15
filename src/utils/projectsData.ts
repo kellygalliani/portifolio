@@ -3,7 +3,7 @@ export const projecsData = [
     id: 1,
     name: "Control Finance",
     description: "Mini aplicativo para controle de finanças pessoais",
-    img: "/static/img/controle_finance.jpg",
+    img: "https://iili.io/2JedP7n.md.jpg",
     homepage: "https://kellygalliani.github.io/ControleFinanceiro/",
     documentation: "",
     html_url: "https://github.com/kellygalliani/ControleFinanceiro",
@@ -14,7 +14,7 @@ export const projecsData = [
     name: "Open Music",
     description:
       "Treinando o dak-mode theme e filtragem por botões e pelo input range",
-    img: "/static/img/open_music.jpg",
+    img: "https://iili.io/2Jedies.md.jpg",
     homepage: "https://kellygalliani.github.io/open-music-base/",
     documentation: "",
     html_url: "https://github.com/kellygalliani/open-music-base",
@@ -24,7 +24,7 @@ export const projecsData = [
     id: 3,
     name: "Web Woman",
     description: "Plataforma de empregos na área de TI para mulheres",
-    img: "/static/img/woman.jpg",
+    img: "https://iili.io/2Jed6dX.md.jpg",
     homepage:
       "https://kellygalliani.github.io/webwomen-job-plataform/pages/home/",
     documentation: "",
@@ -36,7 +36,7 @@ export const projecsData = [
     name: "Git Search",
     description:
       "Encontre e se conecte com profissionais no github de forma rápida e fácil",
-    img: "/static/img/git_search.jpg",
+    img: "https://iili.io/2JedsmG.md.jpg",
     homepage: "https://kellygalliani.github.io/GitSearchBase/pages/home/",
     documentation: "",
     html_url: "https://github.com/kellygalliani/GitSearchBase",
@@ -47,7 +47,7 @@ export const projecsData = [
     name: "Kenzie Hub",
     description:
       "Encontre e se conecte com profissionais no github de forma rápida e fácil",
-    img: "/static/img/kenzie_hub.jpg",
+    img: "https://iili.io/2Jedrgt.md.jpg",
     homepage: "https://react-entrega-kenzie-hub-kellygalliani.vercel.app/",
     documentation: "",
     html_url: "https://github.com/kellygalliani/kenzie-hub",
@@ -58,7 +58,7 @@ export const projecsData = [
     name: "Hamburguer Shop",
     description:
       "Hamburgueria On-line com opções avançadas - inserir no carrinho, incrementar quantidade, filtrar",
-    img: "/static/img/kenzie_burguer.jpg",
+    img: "https://iili.io/2JedvXR.md.jpg",
     homepage: "https://react-entrega-hamburgueria-v2-kelly.vercel.app/",
     documentation: "",
     html_url: "https://github.com/kellygalliani/hamburgueria-v2-Typescript",
@@ -69,7 +69,7 @@ export const projecsData = [
     name: "API - Gerenciamento de usuários",
     description:
       "Api Restfull criada para gerenciar a autenticação de diferentes tipos de usuários",
-    img: "/static/img/code.jpg",
+    img: "https://iili.io/2JedZX4.md.jpg",
     homepage: "",
     documentation: "https://doc-api-adm.vercel.app/",
     html_url:
@@ -81,7 +81,7 @@ export const projecsData = [
     name: "API - Filmay - Banco de Filmes  ",
     description:
       "Um gerenciador de filme no estilo do aplicativo Filmow - É possível cadastrar, visualizar os filmes, atualizar informações do filme e deletar",
-    img: "/static/img/code.jpg",
+    img: "https://iili.io/2JedZX4.md.jpg",
     homepage: "",
     documentation: "",
     html_url: "https://github.com/kellygalliani/movies-typeorm",
@@ -91,7 +91,7 @@ export const projecsData = [
     id: 9,
     name: "API - Nostra Imóveis",
     description: "Api para gerenciamento completo de uma imobiliária",
-    img: "/static/img/code.jpg",
+    img: "https://iili.io/2JedZX4.md.jpg",
     homepage: "",
     documentation: "",
     html_url: "https://github.com/kellygalliani/m4-t14-kimoveis-kelly",
@@ -101,7 +101,7 @@ export const projecsData = [
     id: 10,
     name: "API - KGP Commerce",
     description: "Api completa para gerenciamento de um e-commerce",
-    img: "/static/img/code.jpg",
+    img: "https://iili.io/2JedZX4.md.jpg",
     homepage: "",
     documentation: "https://ecommerce-g35.onrender.com/api/docs/swagger/",
     html_url: "https://github.com/kellygalliani/ecommerce-api_python",
@@ -123,7 +123,7 @@ export const projecsData = [
     name: "SG Global Group - Site Institucional",
     description:
       "Funções em PHP para busca em banco de dados, observer para ações específicas em dobras do site e animações em css (carrosel infinito de imagens)",
-    img: "/static/img/sg_site.jpg",
+    img: "https://iili.io/2JedUqN.md.jpg",
     homepage: "https://sgglobal.group/",
     documentation: "",
     html_url: "",
@@ -133,7 +133,7 @@ export const projecsData = [
     id: 13,
     name: "Creative - Plataforma de Educação",
     description: "Plataforma de Educação Digital - Com Lousa Digital",
-    img: "/static/img/creative.jpg",
+    img: "https://iili.io/2Jed8sp.md.jpg",
     homepage: "https://creative-educ-angular.vercel.app/",
     documentation: "",
     html_url: "https://github.com/kellygalliani/creative_educ-angular",
@@ -144,7 +144,7 @@ export const projecsData = [
     name: "SG MONITOR - Gerenciamento Interno",
     description:
       "Plataforma de gerenciamento de todos os setores internos e dashboards da empresa",
-    img: "/static/img/sg_monitor.jpg",
+    img: "https://iili.io/2Jedkzv.md.jpg",
     homepage: "",
     documentation: "",
     html_url: "",
@@ -155,7 +155,7 @@ export const projecsData = [
     name: "App - Torcidale",
     description:
       "Plataforma inovadora dedicada aos torcedores de futebol, que combina rede social com gamificação",
-    img: "/static/img/torcidale.jpg",
+    img: "https://iili.io/2Jedg1I.md.jpg",
     homepage: "",
     documentation: "",
     html_url: "",
