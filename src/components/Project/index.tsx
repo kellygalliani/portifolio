@@ -60,10 +60,7 @@ export const Project = (): JSX.Element => {
         repositories?.map?.((repository) => (
           <ProjectWrapper key={repository.id}>
             <ProjectImage>
-              <img
-                src="../../public/static/img/code.jpg"
-                alt={repository.name}
-              />
+              <img src={repository.img} alt={repository.name} />
             </ProjectImage>
             <ProjectTitle
               as="h2"
