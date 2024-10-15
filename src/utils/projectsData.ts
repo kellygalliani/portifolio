@@ -112,7 +112,7 @@ export const projecsData = [
     name: "FreshCodes - Site Institucional",
     description:
       "Criação de +8 páginas para site institucional, com modais, lógica de contagem regressiva em javascript, observer e tudo em Tailwind",
-    img: "/static/img/fresh.jpg",
+    img: "https://iili.io/2JedZX4.md.jpg",
     homepage: "https://freshcodes.com.br/",
     documentation: "",
     html_url: "",
