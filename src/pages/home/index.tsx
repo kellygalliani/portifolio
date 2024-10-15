@@ -30,7 +30,7 @@ import { useLanguage } from "../../providers/languageContext";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portifolio`;
 
   const { language } = useLanguage();
 
